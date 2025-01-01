@@ -1,1 +1,1 @@
-# easy-problems-leetcode
+# FAANG_easy-problems-leetcode
