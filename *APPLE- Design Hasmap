@@ -1,0 +1,25 @@
+class MyHashMap {
+ private:
+ //unordered_map<int,int> mp;..... implement like a normal integer
+ static const int Size=1000001;
+ int mp[Size];
+public:
+    MyHashMap() {
+    //mp.push() 
+    std::fill(mp, mp+Size, -1);
+    }
+    
+    void put(int key, int value) {
+    mp[key]=value;   
+    }
+    
+    int get(int key) {
+    //if(mp.find(key)!=mp.end)    return mp[key];  return -1;
+    return mp[key];
+    }
+    
+    void remove(int key) {
+    //mp.erase(key); 
+    mp[key]=-1;   
+    }
+};
